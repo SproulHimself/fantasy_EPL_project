@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EPL Table</title>
+  </head>
+  <body>
+    {% for team in teams %}
+      <h3>{{team.position}}. {{team.name}} </h3>
+      <img src={{team.logo}} width="75em">
+      <br>
+      <strong>Total Points: {{team.points}},</strong>
+      <strong>W: {{team.W}},</strong>
+      <strong>L: {{team.L}},</strong>
+      <strong>D: {{team.D}},</strong>
+      <strong>GD: {{team.GD}},</strong>
+    {% endfor %}
+
+  </body>
+</html>
